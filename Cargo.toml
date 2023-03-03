@@ -4,9 +4,9 @@ authors = ["Michael van Straten"]
 version = "0.1.0"
 edition = "2021"
 license = "MIT"
-documentation = "https://docs.rs/actix-jwt-auth-middleware/"
+documentation = "https://docs.rs/derive-elves/"
 readme = "readme.md"
-repository = "https://github.com/michaelvanstraten/actix-jwt-auth-middleware"
+repository = "https://github.com/michaelvanstraten/derive-elves"
 description = "Writing inclusive derive macros is tedious, this creates provides helper functions that make it easier."
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
