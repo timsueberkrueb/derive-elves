@@ -1,0 +1,20 @@
+[package]
+name = "derive-elves"
+authors = ["Michael van Straten"]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+documentation = "https://docs.rs/actix-jwt-auth-middleware/"
+readme = "readme.md"
+repository = "https://github.com/michaelvanstraten/actix-jwt-auth-middleware"
+description = "Writing inclusive derive macros is tedious, this creates provides helper functions that make it easier."
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+quote = "1.0.10"
+proc-macro2 = "1.0.51"
+
+[dependencies.syn]
+version = "1.0.107"
+features = ["full"]
