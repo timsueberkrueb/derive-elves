@@ -1,8 +1,8 @@
 use proc_macro2::TokenStream;
 use quote::quote;
 use quote::ToTokens;
+use syn::Token;
 use syn::punctuated::Punctuated;
-use syn::token::Add;
 use syn::DeriveInput;
 use syn::ItemImpl;
 use syn::Path;
@@ -54,7 +54,7 @@ fn add_type_generics(impl_type: &mut Box<Type>, target_type: &DeriveInput) {
         // some stuff to be done
     };
 
-    let bounds = |bounds: &mut Punctuated<TypeParamBound, Add>| {
+    let bounds = |bounds: &mut Punctuated<TypeParamBound, Token!(+)>| {
         bounds
             .iter_mut()
             .map(|bound| {
