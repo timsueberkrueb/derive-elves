@@ -61,8 +61,6 @@ impl Trait for (#ident, A, B, C)
 ```
 */
 
-#![feature(box_into_inner)]
-
 pub use type_aware_impl::*;
 
 mod type_aware_impl;

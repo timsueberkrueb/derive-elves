@@ -42,7 +42,7 @@ fn add_type_generics(impl_type: &mut Box<Type>, target_type: &DeriveInput) {
     let boxed = |not_boxed_type: &mut Type| {
         let mut boxed_type = Box::new(not_boxed_type.clone());
         recurse(&mut boxed_type);
-        *not_boxed_type = Box::<Type>::into_inner(boxed_type);
+        *not_boxed_type = (*boxed_type).clone();
     };
 
     let path = |path: &mut Path| {
